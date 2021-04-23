@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add.Add_Files_Screen"
+    app:layout_behavior="@string/fab_transformation_scrim_behavior"
+    android:id="@+id/notes_main">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="600dp">-->
+<!--        <ScrollView-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentLeft="true">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="10dp">-->
+
+<!--                <LinearLayout-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginVertical="5dp"-->
+<!--                    >-->
+
+<!--                    <com.google.android.material.card.MaterialCardView-->
+<!--                        android:layout_width="300dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginRight="2dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:clickable="true"-->
+<!--                        android:focusable="true">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/card1"-->
+<!--                            android:layout_width="200dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:onClick="moveToNextActivity"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:padding="5dp">-->
+<!--            </LinearLayout>-->
+
+<!--        </ScrollView>-->
+<!--    </LinearLayout>-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/ic_add_black_24dp"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_margin="15dp"-->
+<!--        app:rippleColor="#ffffff"-->
+<!--        android:id="@+id/fabbutton"-->
+<!--        android:background="@color/cardview_dark_background"-->
+<!--        android:onClick="addNotes"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"></LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15dp"
+        app:rippleColor="#ffffff"
+        android:id="@+id/fabbutton"
+        android:background="@color/cardview_dark_background"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:longClickable="true"
+        android:id="@+id/remindlist"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

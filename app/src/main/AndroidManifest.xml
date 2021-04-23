@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidcarmanager">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main.Odometer_Screen"></activity>
+        <activity android:name=".Expences.Fuel_Screen" />
+        <activity android:name=".capture.Image_View_Screen" />
+        <activity android:name=".capture.Gallery_Screen" />
+        <activity android:name=".capture.Capture_image_Screen" />
+        <activity android:name=".View_EXPENCES.Search_Screen" />
+        <activity android:name=".user_info.profile_screen" />
+        <activity android:name=".vehical.vehicals" />
+        <activity android:name=".vehical.Add_Vehical_screen" />
+        <activity android:name=".Expences.Expense_Detail_Screen" />
+        <activity android:name=".add.Add_Reminder_Screen" />
+        <activity android:name=".add.Add_Notes_Screen" />
+        <activity android:name=".add.Reminder_Screen" />
+        <activity android:name=".View_EXPENCES.View_Expences_Screen" />
+        <activity android:name=".add.Add_Files_Screen" />
+        <activity android:name=".copmute.Compute_Screen" />
+        <activity android:name=".Expences.Add_Expenses_Screen" />
+        <activity android:name=".user_info.Forget_Password_Screen" />
+        <activity android:name=".user_info.SignUp_Screen" />
+        <activity android:name=".user_info.Login_Screen" />
+        <activity android:name=".main.Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.MainActivity" />
+        <receiver android:name=".add.Reminder"></receiver>
+    </application>
+
+</manifest>

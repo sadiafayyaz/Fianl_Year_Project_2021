@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View_EXPENCES.Search_Screen"
+    android:padding="15dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dates">
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:hintTextColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:hint=" Expense Title"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/searchTitleEt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            app:hintTextColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:hint="Start Date"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:clickable="false"
+                android:focusable="false"
+                android:id="@+id/startdate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:hintTextColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:hint="End Date"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:clickable="false"
+                android:focusable="false"
+                android:id="@+id/enddate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchboxLl"
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/dates">
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            app:hintTextColor="@color/colorPrimaryDark"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:hint="Search with Expense Title"-->
+        <!--            app:endIconMode="clear_text">-->
+
+        <!--            <com.google.android.material.textfield.TextInputEditText-->
+        <!--                android:id="@+id/searchTitleEt"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+        <Button
+            android:id="@+id/btnsearch"
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:text="Search"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textAllCaps="false" />
+
+        <!--        <Button-->
+        <!--                            android:id="@+id/btnsearch"-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:layout_marginRight="14dp"-->
+        <!--                            android:layout_marginLeft="140dp"-->
+        <!--                            android:textColor="#ffffff"-->
+        <!--                            android:background="@drawable/round_button"-->
+        <!--                            android:gravity="center"-->
+        <!--                            android:textSize="16dp"-->
+        <!--                            android:textStyle="bold"-->
+        <!--                            android:paddingTop="8dp"-->
+        <!--                            android:paddingBottom="dp"-->
+        <!--                            android:text="Search" />-->
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="150dp"
+        android:id="@+id/searchList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

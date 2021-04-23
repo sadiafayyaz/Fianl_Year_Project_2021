@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "500206766757",
+    "project_id": "android-car-manager-92274",
+    "storage_bucket": "android-car-manager-92274.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500206766757:android:6fbe0775e17123f4569b4c",
+        "android_client_info": {
+          "package_name": "com.example.androidcarmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500206766757-t04hndt5l211m7io0a9n44vmp9a5pi0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androidcarmanager",
+            "certificate_hash": "fb777423a501e5cac94c83303b3ed1cc4c15cec1"
+          }
+        },
+        {
+          "client_id": "500206766757-pgfrlql5ev1o99bqs76v88jmubjbantl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLkTwgXQ7p5GbiojxU5KyZ2zB3TMZjCYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500206766757-pgfrlql5ev1o99bqs76v88jmubjbantl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

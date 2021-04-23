@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View_EXPENCES.View_Expences_Screen"
+    android:orientation="vertical">
+
+  <com.google.android.material.appbar.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="#ffffff"
+          app:title="View Expences"
+          app:titleMargin="2dp"
+          app:titleTextColor="#3477e3">
+          <ImageButton
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:id="@+id/searchIcon"
+              android:src="@drawable/ic_search_black_24dp"
+              android:layout_marginLeft="180dp">
+          </ImageButton>
+  </androidx.appcompat.widget.Toolbar>
+
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        app:tabMode="scrollable"
+        app:tabContentStart="5dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/cleaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cleaning"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/fuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fuel"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/maintance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maintance"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/purchases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purchases"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/engine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engine Tuning "
+            />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_info.profile_screen"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="15dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userimage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20sp"
+        android:src="@drawable/user" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="40dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textSize="18sp"
+            android:textColor="#0480C0"/>
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="example@gmail.com"
+            android:id="@+id/userEmailTv"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/userimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/progressBar4"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <EditText
+            android:id="@+id/etfirstname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:drawablePadding="13dp"
+            android:drawableLeft="@drawable/ic_namegender"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Your First Name" />
+        <EditText
+            android:id="@+id/etlastname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:drawablePadding="13dp"
+            android:drawableLeft="@drawable/ic_namegender"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Your Last Name" />
+
+        <EditText
+            android:id="@+id/etgender"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/edusername"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/round_border"
+            android:drawableLeft="@drawable/ic_namegender"
+            android:ems="10"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:drawablePadding="13dp"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:hint="Enter Your Gender" />
+
+
+        <EditText
+            android:id="@+id/etphone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/pass1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:drawablePadding="13dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/round_border"
+            android:drawableLeft="@drawable/ic_phone"
+            android:ems="10"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:hint="Enter your phone No" />
+
+        <Button
+            android:id="@+id/btnprofile"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/pass2"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_button"
+            android:text="Update profile"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

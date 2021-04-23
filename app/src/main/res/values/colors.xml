@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#75A8FD</color>
+    <color name="colorPrimaryDark">#3477e3</color>
+    <color name="colorAccent">#6AC2E9</color>
+    <color name="colorError">#B00020</color>
+    <color name="actiontoggle">#ffffff</color>
+
+    <color name="bar1">#BAA4C7</color>
+    <color name="bar2">#CDB4DB</color>
+    <color name="bar3">#FFC8DD</color>
+    <color name="bar4">#FFAFCC</color>
+    <color name="bar5">#BDE0FE</color>
+    <color name="bar6">#B0D9FF</color>
+    <color name="bar7">#A2D2FF</color>
+    <color name="bar8">#BAA4C7</color>
+    <color name="bar9">#CDB4DB</color>
+    <color name="ba10">#FFC8DD</color>
+    <color name="bar11">#FFAFCC</color>
+    <color name="bar12">#BDE0FE</color>
+
+</resources>

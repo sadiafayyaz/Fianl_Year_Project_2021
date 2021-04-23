@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add.Add_Notes_Screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#2F2585"
+            android:text="Title"
+            android:layout_above="@+id/title"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/titlenote"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:padding="13dp"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:hint="Note Title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#2F2585"
+            android:text="Date"
+            android:layout_above="@+id/title"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/notedate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:padding="13dp"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:hint="Note Date" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#2F2585"
+            android:text="Description"
+            android:layout_above="@+id/title"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <EditText
+
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:hint="Type your Note Description here ...."
+            android:inputType="text"
+            android:padding="13dp"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:id="@+id/savenotes"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="380dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+                <Button
+                    android:id="@+id/notesave"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/round_button"
+                    android:textSize="16dp"
+                    android:padding="13dp"
+                    android:textStyle="bold"
+                    android:text="Save note" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

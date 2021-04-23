@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".capture.Capture_image_Screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Faild to Load Image"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/textInfoTv"
+            android:layout_centerInParent="true"
+            />
+        <!--        <Button-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_below="@+id/textInfoTv"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Retake"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:paddingVertical="10dp"-->
+        <!--            android:paddingHorizontal="20dp"-->
+        <!--            android:textColor="@color/cardview_light_background"-->
+        <!--            android:background="@color/colorPrimaryDark"-->
+        <!--            android:id="@+id/captureImageBtn"-->
+        <!--            />-->
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imgView"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="20dp">
+        <!--        <EditText-->
+        <!--            android:id="@+id/editText"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="45dp"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_marginTop="2dp"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:background="@drawable/round_border"-->
+        <!--            android:ems="10"-->
+        <!--            android:paddingRight="8dp"-->
+        <!--            android:paddingLeft="8dp"-->
+        <!--            android:drawablePadding="13dp"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:inputType="textEmailAddress"-->
+        <!--            android:hint="Image Title" />
+        -->
+
+        <Button
+            android:id="@+id/reclickimage"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/textView2"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_button"
+            android:text="Reclick Image"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/uploadbutton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/round_button"
+            android:padding="8dp"
+            android:text="Upload Image"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
